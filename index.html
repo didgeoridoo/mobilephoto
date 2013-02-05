@@ -22,7 +22,8 @@
             
         submit.addEventListener( "click", changeBackground )
         
-        changeBackground = function() {
+        changeBackground = function(e) {
+            e.preventDefault();
             var image = document.getElementById("image").value;
             document.getElementById("background").style.backgroundImage = "url(" + image + ")";
         }
