@@ -15,19 +15,5 @@
               <button id="submit">go!</button>
             </form>
         </div>
-    <script>
-        
-        var changeBackground,
-            submit = document.getElementById("submit");
-            
-        submit.addEventListener( "click", changeBackground(event) )
-        
-        changeBackground = function(e) {
-            e.preventDefault();
-            var image = document.getElementById("image").value;
-            document.getElementById("background").style.backgroundImage = "url(" + image + ")";
-        }
-        
-    </script>
     </body>
 </html>
