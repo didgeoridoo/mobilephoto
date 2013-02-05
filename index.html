@@ -20,7 +20,7 @@
         var changeBackground,
             submit = document.getElementById("submit");
             
-        submit.addEventListener( "click", changeBackground )
+        submit.addEventListener( "click", changeBackground(event) )
         
         changeBackground = function(e) {
             e.preventDefault();
